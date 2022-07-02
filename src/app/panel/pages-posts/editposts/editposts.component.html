@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="card m-auto" style="width:50% ;">
+        <div class="card-body">
+
+            <div class="text-center">
+               
+            </div>
+            <form [formGroup]="formEdit">
+                <div class="form-group">
+                    <label for="">userid</label>
+                    <input formControlName="userId" type="number" class="form-control"/>
+                </div>
+                <div class="form-group">
+                    <label for="">id</label>
+                    <input class="disabled" formControlName="id" type="number" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label for="">title</label>
+                    <textarea formControlName="title" class="form-control" >
+                        
+                    </textarea>
+                </div>
+                <div class="form-group">
+                    <label for="">body</label>
+                    <textarea formControlName="body" class="form-control" >
+                        
+                    </textarea>
+                </div>
+
+                <input class="btn btn-success w-25" type="submit" (click)="updatePost(formEdit)" value="Update"/>
+            </form>                
+        </div>
+    </div>
+</div>
